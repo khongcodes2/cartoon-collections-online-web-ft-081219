@@ -17,5 +17,9 @@ def find_the_cheese(array)
     #if has cheese, put index to holder
       holder << array.index(cheese) if array.include?(cheese)
   end
-  array[holder.sort[0]]
+  if holder.sort[0] == nil
+    return nil
+  else
+    array[holder.sort[0]]
+  end
 end
