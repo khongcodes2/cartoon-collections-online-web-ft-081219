@@ -4,8 +4,7 @@ end
 
 def summon_captain_planet(array)
   array.map do |element|
-    element.capitalize.
-    
+    element.capitalize.concat("!")
   end
 end
 
